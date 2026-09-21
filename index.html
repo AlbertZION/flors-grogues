@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Per a tu 🌻</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fafafa;
+            color: #333;
+            font-family: 'Caveat', cursive;
+            text-align: center;
+        }
+
+        .container {
+            opacity: 0;
+            animation: fadeIn 3s forwards;
+            padding: 20px;
+        }
+
+        .flower {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            display: inline-block;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.8rem;
+            color: #666;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flower">🌻</div>
+        <h1>Feliç dia de les flors grogues</h1>
+        <p>Tot i la distància, avui no et podies quedar sense la teva.</p>
+    </div>
+</body>
+</html>
